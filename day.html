@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>생과방의 하루</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+	*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+  
+       font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    header{
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: #FDF2E3;
+    }
+
+    .one {
+     margin: 0px 160px;
+    }
+
+   .menu ul {
+    list-style: none;
+    display: flex;
+   }
+
+.menu a{
+  text-decoration: none;
+  line-height: 15px;
+  color: #2F2C3B;
+  padding: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu a:hover{
+  color: #EC6A34;
+  border-bottom-style: solid;
+	border-width: 3px;
+	border-color: #EC6A34;
+	padding-bottom: 7px;
+  animation: bounce 0.6s;
+  animation-delay: 0.3s;
+}
+
+a{
+  text-decoration: none;
+  color: #2F2C3B;
+}
+
+.back a{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.back{
+  margin: 0px 160px;
+}
+
+
+h1{
+  font-size: 28px;
+  font-weight: 500;
+  color: #2F2C3B;
+  margin-top: 100px;
+  margin-left: 160px;
+}
+
+.line{
+  width: 1370px;
+  height: 1px;
+  background-color: #C75E3B;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main{
+  padding-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  height: 639.49px;
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px 20px;
+}
+
+.item1 {
+  background-image: url(https://modo-phinf.pstatic.net/20210823_138/16297062799414qJFc_JPEG/mosaXGycSB.jpeg?type=w720);
+  width: 381px;
+  height: 242px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.item2 {
+  background-image: url(https://www.chf.or.kr/jnrepo/namo/img/images/000007/20210412011338151_6PMX7DW9.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 232px;
+  height: 242px;
+}
+
+.item3 {
+  background-image: url(https://pbs.twimg.com/media/FbeYy8jaIAE3Ui7?format=jpg&name=medium);
+  background-size: cover;
+  background-position: center center;
+  width: 307px;
+  height: 150px;
+}
+
+.item4 {
+  background-image: url(https://pbs.twimg.com/media/FbeYy8aaQAAeUwr?format=jpg&name=medium);
+  background-size: cover;
+  background-position: center center;
+  width: 633px;
+  height: 203px;
+}
+
+.item5 {
+  background-image: url(https://pbs.twimg.com/media/FQBoW3gWUAQ16xe?format=jpg&name=medium);
+  background-size: cover;
+  background-position: center center;
+  margin-top: -92px;
+  width: 307px;
+  height: 469px;
+}
+
+.item6 {
+  background-image: url(https://www.chf.or.kr/jnrepo/namo/img/images/000007/20210412011338151_6PMX7DW9.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 222px;
+  height: 154px;
+  margin-top: -174px;
+}
+
+.item7 {
+  background-image: url(https://www.chf.or.kr/jnrepo/namo/img/images/000001/gyeongbokgung_palace_img5.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 391px;
+  height: 154px;
+  margin-top: -174px;
+}
+
+.item1:hover {
+  transform: scale(1.05);
+}
+
+.item2:hover {
+  transform: scale(1.05);
+}
+
+.item3:hover {
+  transform: scale(1.05);
+}
+
+.item4:hover {
+  transform: scale(1.05);
+}
+
+.item5:hover {
+  transform: scale(1.05);
+}
+
+.item6:hover {
+  transform: scale(1.05);
+}
+
+.item7:hover {
+  transform: scale(1.05);
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  height: 239px;
+  margin-top: 180px;
+  display: flex;
+  background-color: #2F2C3B;
+  justify-content: space-between;
+  align-items: center;
+  color: #FDF2E3;
+}
+
+.footer img{
+  opacity: 80%;
+}
+
+.footer div{
+  padding-top: 26px;
+  padding-bottom: 73px;  
+}
+
+.right{
+  margin-top: 109px;
+  margin-right: 160px;  
+}
+
+.right p{
+  font-size: 15px;
+}
+
+.left img{
+  width: 85px;
+  height: 85px;
+}
+
+.left p{
+  padding-top: 6px;
+  font-size: 15px;
+}
+
+.left{
+  margin-left: 160px;
+}
+</style>
+<body>
+  <header>
+    <a href="index.html" class="one"><img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" height="85" alt="10x10"></a>
+  
+   <nav class="menu">
+      <ul>
+        <li><a href="#">생과방 이야기</a></li>
+        <li><a href="nav_two.html">궁중병과</a></li>
+        <li><a href="nav_three.html">궁중약차</a></li>
+        <li><a href="day.html">생과방의 하루</a></li>
+        <li><a href="reservation.html">예약하기</a></li>
+      </ul>
+    </nav>  
+  
+    <div class="back">
+    <a href="#">로그인</a>
+    </div>
+  </header>
+
+  <div class="top">
+     <h1>생과방의 하루</h1>
+    <div class = "line"></div>
+  </div>
+
+  <div class="main">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+    <div class="item7"></div>
+  </div>
+  
+  <div class = "footer">
+    <div class = "left"> 
+      <img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" alt="생과방 로고">
+       <p>서울특별시 종로구 세종로 / TEL : 02-3407-1500<br>Copyright(C) Korea Cultural Heritage Foundation All Rights Reserved.</p>
+    </div> 
+      
+    <div class="right">
+        <p class="number">한국문화재재단 ㅣ 전화번호 : 02-3210-4807</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="Ko-KR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>생과방</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  
+   font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  header{
+    background-image: url(https://www.royalpalace.go.kr/content/images/album/bang/bang01.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+.main{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.one {
+  margin: 0px 160px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu a{
+  text-decoration: none;
+  line-height: 15px;
+  color: #2F2C3B;
+  padding: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu a:hover{
+  color: #EC6A34;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #EC6A34;
+  padding-bottom: 7px;
+  animation: bounce 0.6s;
+  animation-delay: 0.3s;
+}
+
+.first a{
+  text-decoration: none;
+  display: block;
+  flex-grow: 1;
+  transition: flex-grow 0.3s ease-in;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.first a:hover{
+  /*opacity: 0.6;*/
+  flex-grow: 3;
+}
+
+.info{
+   position: absolute;
+   color: white;
+   width: 100%;
+   height: 835px;
+   padding-top: 288px;
+   padding-left: 160px;
+}
+
+.info p{
+  font-size: 58px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  transition-delay: 0.1s;
+  letter-spacing: 0.8px;
+}
+
+a:hover .info{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.main:hover{
+  background-color: rgba(0, 0, 0, .5);
+}
+
+a:hover p{
+   opacity: 1;
+}
+
+a{
+  text-decoration: none;
+  color: #2F2C3B;
+}
+
+.back a{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.back{
+  margin: 0px 160px;
+}
+
+.back a:hover{
+  color: #EC6A34;
+}
+
+.first{
+  height: 835px;
+}
+.name{
+  margin-top: 150px;
+  text-align: center;
+  color: #EC6A34;
+}
+
+h1{
+  font-size: 38px;
+  padding-bottom: 12px;
+}
+
+.line{
+  width: 140px;
+  height: 2.3px;
+  background-color: #3E3737;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name p{
+  font-size: 24px;
+  font-weight: 400;
+  padding-right: 160px;
+  padding-left: 160px;
+  margin-top: 64px;
+  color: #474747;
+  text-align: left;
+}
+
+.two{
+  margin-top: 200px;
+}
+
+.three{
+  margin-top: 140px;
+}
+
+h2{
+  font-size: 38px;
+  padding-bottom: 12px;
+  margin-left: 160px;
+  color: #2F2C3B;
+}
+
+.line2{
+  width: 1370px;
+  height: 2px;
+  background-color: #C75E3B;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product{
+  text-align: center;
+  color: #FDF2E3;
+  background-color: #EE7949;
+  margin-top: -10px;
+  opacity: 0;
+}
+
+.box:hover .product{
+  opacity: 1;
+}
+
+h5{
+  font-size: 28px;
+  font-weight: 500;
+  padding-top: 47px;
+}
+
+.product p{
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 47px;
+}
+
+.group-list{
+  padding-top: 24px;
+  width: 981px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.box{
+  margin-right: 20px;
+  width: 307px;
+  border: 1px;
+  display: block;
+}
+
+.group-list img{
+  border: 1px;
+  height: 386px;
+}
+
+h3{
+  font-size: 38px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: #2F2C3B;
+  margin-top: 200px;
+}
+
+.line3{
+  width: 250px;
+  height: 2px;
+  background-color: #3E3737;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day-list{
+  padding-top: 64px;
+  width: 960px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.nam{
+  width: 480px;
+  display: block;
+}
+
+.day img{
+  width: 480px;
+  height: 212px;
+}
+
+h4{
+  font-size: 24px;
+  margin-left: 160px;
+  padding-bottom: 12px;
+  margin-top: 200px;
+  color: #2F2C3B;
+}
+
+.line4{
+  width: 1370px;
+  height: 1px;
+  background-color: #3E3737;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.last p{
+  color: #474747;
+  font-size: 19px;
+  margin-top: 20px;
+  margin-left: 160px;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  height: 239px;
+  display: flex;
+  margin-top: 120px;
+  background-color: #2F2C3B;
+  justify-content: space-between;
+  align-items: center;
+  color: #FDF2E3;
+}
+
+.footer img{
+  opacity: 80%;
+}
+
+.footer div{
+  padding-top: 26px;
+  padding-bottom: 73px;  
+}
+
+.right{
+  margin-top: 109px;
+  margin-right: 160px;  
+}
+
+.left img{
+  width: 85px;
+  height: 85px;
+}
+
+.left p{
+  padding-top: 6px;
+}
+
+.left{
+  margin-left: 160px;
+}
+
+
+</style>
+
+<body>
+<header>
+  <div class="main">
+    <a href="main.html" class="one"><img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" height="85" alt="생과방 로고"></a>
+  
+    <nav class="menu">
+      <ul>
+        <li><a href="#">생과방 이야기</a></li>
+        <li><a href="nav_two.html">궁중병과</a></li>
+        <li><a href="nav_three.html">궁중약차</a></li>
+        <li><a href="day.html">생과방의 하루</a></li>
+        <li><a href="reservation.html">예약하기</a></li>
+      </ul>
+    </nav>  
+  
+    <div class="back">
+      <a href="#">로그인</a>
+    </div>
+  </div>
+  
+  <div class="first">
+    <a class="box1" href="http://www.royalpalace.go.kr/">
+      <div class="info">
+        <p>경복궁에서 마주한<br>특별한 시간</p>
+      </div>
+    </a>
+  </div>
+    
+</header>
+  
+  <div class="name">
+    <img src="https://www.urbanbrush.net/web/wp-content/uploads/edd/2019/06/urbanbrush-20190611091305133971.png" height="406">
+    <h1>생과방</h1>
+    <div class = "line"></div>
+    <p>경복궁 소주방 전각에 위치한 ‘생과방’은 궁중의 육처소(六處所) 가운데 하나이며, ‘국왕과 왕비’의 후식과 별식을 준비하던 곳으로 ‘생물방’ 혹은 ‘생것방’이라고도 불렸습니다. 경복궁 생과방 프로그램은 조선왕조실록의 내용을 토대로 실제 임금이 먹었던 궁중병과와 궁중약차를 오늘날에도 즐길 수 있도록 구성된 유료 체험 프로그램 입니다.</p>
+  </div>
+  
+  <div class="two">
+    <h2>궁중병과</h2>
+    <div class = "line2"></div>
+    <div class="group-list">
+      <div class="box">
+        <img src="https://modo-phinf.pstatic.net/20220413_67/1649813398939doOQE_PNG/mosaRUqPyI.png?type=f353_235" width="307">
+        <div class="product">
+          <h5>주악</h5>
+          <p>糯米面甜油糕</p>
+        </div>
+      </div>
+    
+      <div class="box">
+        <img src="https://modo-phinf.pstatic.net/20220413_15/1649813402077tlTnB_JPEG/mosaE4pLmE.jpeg?type=f353_235" width="307">
+        <div class="product">
+          <h5>사과정과</h5>
+          <p>正果</p>
+        </div>
+      </div>
+    
+      <div class="box">
+        <img src="https://modo-phinf.pstatic.net/20220413_202/1649813401566EmCGL_JPEG/mosa32g49M.jpeg?type=f353_235" width="307">
+        <div class="product">
+          <h5>매작과</h5>
+          <p>梅雀菓</p>
+        </div>
+      </div>
+  </div>
+  </div>  
+    
+  <div class="three">
+    <h2>궁중약차</h2>
+    <div class = "line2"></div>
+    <div class="group-list">
+      <div class="box">
+        <img src="https://modo-phinf.pstatic.net/20220413_153/1649814851805WJtSj_JPEG/mosak0Y6lF.jpeg?type=f353_235" width="307">
+        <div class="product">
+          <h5>강계다음</h5>
+          <p>생강, 계피, 귤피, 대추</p>
+        </div>
+      </div>
+    
+      <div class="box">
+        <img src="https://modo-phinf.pstatic.net/20220413_214/1649814854749AxWLB_JPEG/mosaAgOuod.jpeg?type=f353_235" width="307">
+        <div class="product">
+          <h5>오미자차</h5>
+          <p>오미자</p>
+        </div>
+      </div>
+    
+      <div class="box">
+        <img src="https://modo-phinf.pstatic.net/20220413_15/1649814856108soX15_JPEG/mosaecdAzx.jpeg?type=f353_235" width="307">
+        <div class="product">
+          <h5>제호차</h5>
+          <p>매실, 인삼, 귤피, 대추</p>
+        </div>
+      </div>
+  </div>
+  </div>  
+    
+  <div class="day">
+    
+    <h3>생과방의 하루</h3>
+    <div class = "line3"></div>
+    
+     <div class="day-list">
+       
+      <div class="nam">
+        <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000007/20210412011404589_BPKDHJT7.jpg" width="307">
+      </div>
+    
+      <div class="nam">
+        <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000001/gyeongbokgung_palace_img1.jpg" width="307">
+      </div>
+     </div>
+  </div>
+    
+    <div class="last">
+      <h4>오시는 길</h4>
+      <div class = "line4"></div>
+      <p>생과방은 경복궁 소주방 권역에 위치하고 있습니다. 경복궁 입구에서 교태전까지 직진 후 오른편 쪽문으로 나오시면 됩니다.</p>
+    </div>
+    
+    <div class = "footer">
+     <div class = "left"> 
+      <img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" alt="생과방 로고">
+       <p>서울특별시 종로구 세종로 / TEL : 02-3407-1500<br>Copyright(C) Korea Cultural Heritage Foundation All Rights Reserved.</p>
+      </div> 
+      
+      <div class="right">
+        <p class="number">한국문화재재단 ㅣ 전화번호 : 02-3210-4807</p>
+      </div>
+  </div>
+</body>
+</html>

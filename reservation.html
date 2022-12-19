@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>예약페이지</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+	*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #FDF2E3;
+}
+
+.one {
+  margin: 0px 160px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu a{
+  text-decoration: none;
+  line-height: 15px;
+  color: #2F2C3B;
+  padding: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu a:hover{
+  color: #EC6A34;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #EC6A34;
+  padding-bottom: 7px;
+  animation: bounce 0.6s;
+  animation-delay: 0.3s;
+}
+
+a{
+  text-decoration: none;
+  color: #2F2C3B;
+}
+
+.back a{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.back{
+  margin: 0px 160px;
+}
+
+h1{
+  font-size: 28px;
+  font-weight: 500;
+  color: #2F2C3B;
+  margin-top: 12px;
+  margin-left: 57px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding-bottom: 12px;
+  border-color: #2F2C3B;
+}
+
+.name{
+  margin-top: 5px;
+}
+
+.name p{
+  font-size: 20px;
+  margin-top: 16px;
+  margin-left: 62px;
+  font-weight: 400;
+  color: #2F2C3B;
+  padding-bottom: 16px;
+}
+
+.line{
+  width: 558px;
+  height: 1px;
+  background-color: #2F2C3B;
+  margin-left: 57px;
+}
+
+h2{
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 62px;
+  color: #2F2C3B;
+  padding-top: 24px;
+}
+
+h3{
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 62px;
+  color: #2F2C3B;
+  padding-top: 20px;
+}
+
+strong{
+  font-size: 18px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.two a{
+  display: block;
+  background-color: #EC6A34;
+  border-radius: 20px;
+  width: 539px;
+  height: 75px;
+  line-height: 44px;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 27px;
+  margin-left: 62px;
+  filter: drop-shadow(0px 4px 20px  rgba(0, 0, 0, 0.15));
+}
+
+.two a:hover{
+  background-color: #FAD3C3;
+  color: #EC6A34;
+  font-weight: bold;
+}
+
+.top{
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top img{
+  height: 480px;
+  margin-left: 160px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item1{
+  width: 103px;
+  height: 102px;
+  background-image: url(https://cdn.eachj.co.kr/news/photo/202204/5894_10204_211.png);
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.item2{
+  width: 103px;
+  height: 102px;
+  background-image: url(https://www.chf.or.kr/jnrepo/upload/jnPrgCalendarContents/202104/21af81def2024366bb7dfac69bcda5c9_1617950818664.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.item3{
+  width: 103px;
+  height: 102px;
+  background-image: url(https://modo-phinf.pstatic.net/20220909_146/1662688814049Fer7U_GIF/mosaqDkb9m.gif?type=w1100);
+  background-position: center;
+  background-size: cover;
+}
+
+.two{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 13px;
+  margin-left: 160px;
+}
+
+.line2{
+  width: 1370px;
+  height: 1px;
+  margin-top: 80px;
+  background-color: #2F2C3B;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.last{
+  margin-left: 460px;
+  align-items: center;
+  margin-top: 84px;
+}
+
+.ect{
+  margin-top: 60px;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  height: 239px;
+  display: flex;
+  margin-top: 165px;
+  background-color: #2F2C3B;
+  justify-content: space-between;
+  align-items: center;
+  color: #FDF2E3;
+}
+
+.footer img{
+  opacity: 80%;
+}
+
+.footer div{
+  padding-top: 26px;
+  padding-bottom: 73px;  
+}
+
+.right{
+  margin-top: 109px;
+  margin-right: 160px;  
+}
+
+.right p{
+  font-size: 15px;
+}
+
+.left img{
+  width: 85px;
+  height: 85px;
+}
+
+.left p{
+  padding-top: 6px;
+  font-size: 15px;
+}
+
+.left{
+  margin-left: 160px;
+}
+
+</style>
+<body>
+<header>
+  <a href="index.html" class="one"><img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" height="85" alt="10x10"></a>
+  
+  <nav class="menu">
+    <ul>
+      <li><a href="#">생과방 이야기</a></li>
+      <li><a href="nav_two.html">궁중병과</a></li>
+      <li><a href="nav_three.html">궁중약차</a></li>
+      <li><a href="day.html">생과방의 하루</a></li>
+      <li><a href="reservation.html">예약하기</a></li>
+    </ul>
+  </nav>  
+  
+  <div class="back">
+    <a href="#">로그인</a>
+  </div>
+</header>
+
+  <div class="top">
+    <img src="https://www.chf.or.kr/jnrepo/upload/jnPrgCalendarContents/202111/0b87479fbb8d4aa28eddbe17283c1a4e_1637209335254.jpg" width="348">
+    <div class="name">
+      <h1>2022 경복궁 생과방</h1>
+      <p>생과방 내부에 위치한 호궤소에서 궁중병과와 궁중약차 메뉴를<br>직접 선택한 후 안내에 따라 궁중다과를 시식·체험할 수 있습니다.</p>
+      
+      <div class = "line"></div>
+      
+      <h2>행사기간: 매년 상/하반기<br>운영시간: 10:00~16:00<br>관람 시간: 70분<br>예약방법 : 사전 선착순 예매(회차당 30명)<br>전화문의: 1544-1555</h2>
+      
+      <h3>참여방법:<br>① 생과방 ‘호궤소’ 방문 → ② 궁중병과 및 약차 선택 →<br>③ 비용(카드) 결제 → ④ 좌석 배정 및 안내 → ⑤ 다과 시식<br><strong>※ 온라인 신청 후 참여 가능</strong></h3>
+      
+      
+    </div>
+  </div>
+  
+  <div class="two">
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <a href="https://tickets.interpark.com/search?keyword=%EC%83%9D%EA%B3%BC%EB%B0%A9">예약하기</a>
+  </div>
+  
+  <div class = "line2"></div>
+  
+  <div class="last">
+    <img src="https://www.chf.or.kr/jnrepo/namo/img/images/000021/20211118125709700_AZQ16JON.jpg" width="715">
+    <br>
+    <img class="ect" src="https://modo-phinf.pstatic.net/20220909_146/1662688814049Fer7U_GIF/mosaqDkb9m.gif?type=w1100" width="715">
+  </div>
+    
+  <div class = "footer">
+    <div class = "left"> 
+      <img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" alt="생과방 로고">
+       <p>서울특별시 종로구 세종로 / TEL : 02-3407-1500<br>Copyright(C) Korea Cultural Heritage Foundation All Rights Reserved.</p>
+    </div> 
+      
+    <div class="right">
+        <p class="number">한국문화재재단 ㅣ 전화번호 : 02-3210-4807</p>
+    </div>
+  </div>
+</body>
+</html>

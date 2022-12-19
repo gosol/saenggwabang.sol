@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>궁중병과 제품 페이지</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+	*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    header{
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: #FDF2E3;
+    }
+
+    .one {
+      margin: 0px 160px;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .menu a{
+      text-decoration: none;
+      line-height: 15px;
+      color: #2F2C3B;
+      padding: 30px;
+     display: inline-block;
+     text-transform: uppercase;
+     font-weight: 400;
+    }
+
+    .menu a:hover{
+      color: #EC6A34;
+      border-bottom-style: solid;
+	  border-width: 3px;
+	  border-color: #EC6A34;
+	  padding-bottom: 7px;
+      animation: bounce 0.6s;
+      animation-delay: 0.3s;
+    }
+
+    a{
+      text-decoration: none;
+      color: #2F2C3B;
+    }
+
+    .back a{
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .back{
+      margin: 0px 160px;
+    }
+
+    .top{
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1{
+      font-size: 28px;
+      font-weight: 500;
+      color: #2F2C3B;
+	  padding-bottom: 12px;
+      margin-top: 100px;
+      margin-left: 160px;
+    }
+
+    .line{
+      width: 1370px;
+      height: 1px;
+      background-color: #C75E3B;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .group{
+      margin-top: 48px;
+    }
+
+    .group img{
+      height: 204px;
+    }
+
+    .group-list{
+      width: 978px;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+      display: flex;
+    }
+
+    .product{
+      width: 306px;
+      display: block;
+      text-decoration: none;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 84px;
+    }
+
+    .product-name{
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #2F2C3B;
+      text-align: center;
+    }
+
+    .product-price{
+      margin-top: -5px;
+      margin-bottom: 44px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #818181;
+      text-align: center;
+    }
+
+    .group img:hover {
+       transform: scale(1.1);
+     }
+
+    .clearfix{
+       clear: both;
+    }
+
+    .footer{
+       position: relative;
+       width: 100%;
+       height: 239px;
+       margin-top: -17px;
+       display: flex;
+       background-color: #2F2C3B;
+       justify-content: space-between;
+       align-items: center;
+       color: #FDF2E3;
+    }
+
+    .footer img{
+      opacity: 80%;
+    }
+
+    .footer div{
+      padding-top: 26px;
+      padding-bottom: 73px;  
+    }
+
+    .right{
+       margin-top: 109px;
+       margin-right: 160px;  
+    }
+
+    .right p{
+       font-size: 15px;
+    }
+
+    .left img{
+      width: 85px;
+      height: 85px;
+    }
+
+    .left p{
+      padding-top: 6px;
+      font-size: 15px;
+    }
+
+    .left{
+       margin-left: 160px;
+    }
+</style>
+<body>
+	<header>
+      <a href="index.html" class="one"><img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" height="85" alt="10x10"></a>
+  
+      <nav class="menu">
+        <ul>
+           <li><a href="#">생과방 이야기</a></li>
+           <li><a href="nav_two.html">궁중병과</a></li>
+           <li><a href="nav_three.html">궁중약차</a></li>
+           <li><a href="day.html">생과방의 하루</a></li>
+           <li><a href="reservation.html">예약하기</a></li>
+        </ul>
+      </nav>  
+  
+      <div class="back">
+        <a href="#">로그인</a>
+      </div>
+    </header>
+
+    <div class="top">
+       <h1>궁중병과(드시다)</h1>
+       <div class = "line"></div>
+    </div>
+  
+
+   <div class="group">
+    <div class="group-list">
+        <a href="#" class="product">
+          <img src="https://modo-phinf.pstatic.net/20220413_105/1649813397390xhvfT_JPEG/mosaicFEMz.jpeg?type=f353_235" width="306">
+          <div class="product-name">구선왕고도</div>
+          <div class="product-price">九仙王道糕</div>
+        </a>
+      
+      <a href="nav_nav.html" class="product">
+          <img src="https://modo-phinf.pstatic.net/20220413_67/1649813398939doOQE_PNG/mosaRUqPyI.png?type=f353_235" width="306">
+          <div class="product-name">주악</div>
+          <div class="product-price">造角</div>
+        </a>
+        <a href="#" class="product">
+          <img src="https://modo-phinf.pstatic.net/20220413_15/1649813402077tlTnB_JPEG/mosaE4pLmE.jpeg?type=f353_235" width="306">
+          <div class="product-name">사과정과</div>
+          <div class="product-price">正果</div>
+        </a>
+          <a href="#" class="product">
+          <img src="https://modo-phinf.pstatic.net/20220413_13/1649813400213ktKhA_PNG/mosaZXlnXl.png?type=f353_235" width="306">
+          <div class="product-name">약과</div>
+          <div class="product-price">藥果</div>
+        </a>
+            <a href="#" class="product">
+          <img src="https://modo-phinf.pstatic.net/20220413_11/1649813400680pg83G_JPEG/mosadIhM8N.jpeg?type=f353_235" width="306">
+          <div class="product-name">호두정과</div>
+          <div class="product-price">正果</div>
+        </a>
+              <a href="#" class="product">
+          <img src="https://modo-phinf.pstatic.net/20220413_202/1649813401566EmCGL_JPEG/mosa32g49M.jpeg?type=f353_235" width="306">
+          <div class="product-name">매작과</div>
+          <div class="product-price">梅雀菓</div>
+        </a>
+   
+        <div class="clearfix"></div>
+      </div>
+   </div>
+  
+   <div class = "footer">
+      <div class = "left"> 
+        <img src="https://modo-phinf.pstatic.net/20210819_44/1629349717756bmXIY_PNG/mosacxaJ08.png?type=f320_320" alt="생과방 로고">
+        <p>서울특별시 종로구 세종로 / TEL : 02-3407-1500<br>Copyright(C) Korea Cultural Heritage Foundation All Rights Reserved.</p>
+      </div> 
+      
+      <div class="right">
+        <p class="number">한국문화재재단 ㅣ 전화번호 : 02-3210-4807</p>
+      </div>
+   </div>
+</body>
+</html>
